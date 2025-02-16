@@ -33,7 +33,7 @@ public class Bow : MonoBehaviour, ITransformer
     private Vector3 _positionVelocity = Vector3.zero;
     private float _rotationVelocity;
 
-    private Arrow _loadedPellet;
+    private Arrow _loadedArrow;
 
     private readonly WaitForSeconds _hapticsWait = new(TensionStepLength * 0.5f);
 
@@ -48,8 +48,7 @@ public class Bow : MonoBehaviour, ITransformer
 
     private void OnTriggerEnter(Collider other)
     {
-        Console.WriteLine($"OnTriggerEnter {other}");
-        if (_loadedPellet != null) return;
+        if (_loadedArrow != null) return;
 
         if (other.TryGetComponent(out Arrow arrow)) HandleArrowSnapped(arrow);
     }
@@ -69,8 +68,8 @@ public class Bow : MonoBehaviour, ITransformer
 
             handGrabInteractor.ForceRelease();
             handGrabInteractor.ForceSelect(interactable, true);
-            _loadedPellet = arrow;
-            _loadedPellet.Attach();
+            _loadedArrow = arrow;
+            _loadedArrow.Attach();
             return;
         }
     }
@@ -131,11 +130,11 @@ public class Bow : MonoBehaviour, ITransformer
     public void EndTransform()
     {
         _isGrabbed = false;
-        if (_loadedPellet != null)
+        if (_loadedArrow != null)
         {
             var force = ArrowLaunchForce();
-            _loadedPellet.Eject(force);
-            _loadedPellet = null;
+            _loadedArrow.Eject(force);
+            _loadedArrow = null;
         }
 
         CurveHolder(0f);
@@ -161,9 +160,9 @@ public class Bow : MonoBehaviour, ITransformer
 
     private void LateUpdate()
     {
-        if (_loadedPellet != null)
+        if (_loadedArrow != null)
         {
-            _loadedPellet.Move(holder);
+            _loadedArrow.Move(holder);
         }
     }
 
