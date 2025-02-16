@@ -1,0 +1,5 @@
+/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/.utmp/RelWithDebInfo/3h6y3u5c/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/.utmp/RelWithDebInfo/3h6y3u5c/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/.utmp/RelWithDebInfo/3h6y3u5c/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/.utmp/RelWithDebInfo/3h6y3u5c/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/.utmp/RelWithDebInfo/3h6y3u5c/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

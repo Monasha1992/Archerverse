@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Oculus.Interaction;
 using Oculus.Interaction.HandGrab;
 using UnityEngine;
@@ -76,6 +75,7 @@ public class Bow : MonoBehaviour, ITransformer
 
     public void BeginTransform()
     {
+        Debug.Log("===> BeginTransform");
         var grabPoint = _grabbable.GrabPoints[0];
         var targetTransform = _grabbable.Transform;
         _grabDeltaInLocalSpace = new Pose(
@@ -91,6 +91,7 @@ public class Bow : MonoBehaviour, ITransformer
 
     public void UpdateTransform()
     {
+        Debug.Log("===> UpdateTransform");
         var grabPoint = _grabbable.GrabPoints[0];
         var targetTransform = _grabbable.Transform;
 
@@ -129,6 +130,7 @@ public class Bow : MonoBehaviour, ITransformer
 
     public void EndTransform()
     {
+        Debug.Log("===> EndTransform");
         _isGrabbed = false;
         if (_loadedArrow != null)
         {
@@ -181,6 +183,7 @@ public class Bow : MonoBehaviour, ITransformer
 
     private Vector3 ArrowLaunchForce()
     {
+        Debug.Log("===> ArrowLaunchForce");
         var targetTransform = _grabbable.Transform;
         var tension = Tension(targetTransform.localPosition);
         var direction = (targetTransform.parent.position - targetTransform.position).normalized;
@@ -191,6 +194,7 @@ public class Bow : MonoBehaviour, ITransformer
 
     public void OnStretch(float currentTension)
     {
+        Debug.Log("===> OnStretch " + currentTension);
         if (Mathf.Abs(_lastTensionStep - currentTension) > stretchAudioStep.Evaluate(currentTension)
             && (Time.unscaledTime - _lastTensionTime) > TensionStepLength)
         {

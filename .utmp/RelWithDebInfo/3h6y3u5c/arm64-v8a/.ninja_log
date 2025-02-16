@@ -1,0 +1,19 @@
+# ninja log v5
+780	877	1739724428058096357	/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3h6y3u5c/obj/arm64-v8a/libgame.so	9bba92943e69e6b5
+0	780	1739724427959910742	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a4f157fc96c0cd78
+1	725	1739724427905174311	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3e7bd313c08e6069
+2	598	1739724427779004432	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f381816f48de9310
+1	594	1739724427774226255	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a089beb4893465a6
+2	559	1739724427739095663	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ab08681cac4983e9
+0	558	1739724427738427697	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ad8a0bb0a235564c
+1	547	1739724427725345221	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	cec0e7b857064636
+2	545	1739724427723208572	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	f816eb16dfcafeec
+5	967	1739725319555431423	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	f816eb16dfcafeec
+4	968	1739725319555490507	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	cec0e7b857064636
+4	969	1739725319557959284	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	ad8a0bb0a235564c
+5	973	1739725319562637293	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	ab08681cac4983e9
+4	991	1739725319580821617	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a089beb4893465a6
+5	999	1739725319589906633	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	f381816f48de9310
+4	1131	1739725319721096066	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3e7bd313c08e6069
+3	1201	1739725319788405010	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a4f157fc96c0cd78
+1201	1408	1739725319995733609	/Users/prageeth-dev/Documents/Uni/2-1/DET/projects/Archerverse/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3h6y3u5c/obj/arm64-v8a/libgame.so	9bba92943e69e6b5
